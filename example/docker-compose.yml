@@ -1,7 +1,7 @@
 services:
-  medi-eco-book-stack-query-actions:
-    image: fluxms/flux-eco-ehf-app-backend:v2022-03-25-1
+  flux-eco-ehf-app-backend:
+    image: fluxms/flux-eco-ehf-app-backend:v2022-03-29-1
     ports:
-      - 127.1.2.8:8200:8200
+      - 127.0.0.1:8200:8200
     volumes:
       - ./../data:/opt/flux-eco-ehf-app-backend/app/data
