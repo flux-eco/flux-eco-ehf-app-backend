@@ -1,0 +1,75 @@
+{
+  "server": {
+    "port": 8200,
+    "host": "localhost"
+  },
+  "policies": null,
+  "routes": {
+    "static": {
+    },
+    "api": {
+      "/api/readTrainingSession/trainingArea/{trainingArea}": {
+        "content-type": "application/json",
+        "content": {
+          "type": "array"
+        }
+      },
+      "/api/readTrainingDiary/userId/{userId}/trainingSessionId/{trainingSessionId}": {
+        "content-type": "application/json",
+        "content": {
+          "type": "object"
+        }
+      },
+      "/api/readPlaytimeAnswer/userId/{userId}/trainingSessionId/{trainingSessionId}": {
+        "content-type": "application/json",
+        "content": {
+          "type": "object"
+        }
+      },
+      "/api/readTrainingAreas": {
+        "content-type": "application/json",
+        "content": {
+          "type": "array"
+        }
+      }
+    }
+  },
+  "actions": [
+    {
+      "actionName": "readTrainingSession",
+      "parameters": {
+        "trainingArea": {
+          "type": "string"
+        }
+      }
+    },
+    {
+      "actionName": "readTrainingDiary",
+      "parameters": {
+        "userId": {
+          "type": "string"
+        },
+        "trainingSessionId": {
+          "type": "string"
+        }
+      }
+    },
+    {
+      "actionName": "readPlaytimeAnswer",
+      "parameters": {
+        "userId": {
+          "type": "string"
+        },
+        "trainingSessionId": {
+          "type": "string"
+        }
+      }
+    },
+    {
+      "actionName": "readTrainingAreas",
+      "parameters": {
+
+      }
+    }
+  ]
+}
