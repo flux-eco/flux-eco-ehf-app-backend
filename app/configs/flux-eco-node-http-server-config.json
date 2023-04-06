@@ -3,9 +3,19 @@
     "port": 8200,
     "host": "0.0.0.0"
   },
-  "policies": null,
   "routes": {
     "static": {
+      "/data": {
+        "/**/*.mp4": {
+          "contentType": "video/mp4"
+        },
+        "/**/*.svg": {
+          "contentType": "image/svg+xml"
+        },
+        "/**/*.jpg": {
+          "contentType": "image/jpeg"
+        }
+      }
     },
     "api": {
       "/api/readTrainingSession/trainingArea/{trainingArea}": {
@@ -68,7 +78,6 @@
     {
       "actionName": "readTrainingAreas",
       "parameters": {
-
       }
     }
   ]

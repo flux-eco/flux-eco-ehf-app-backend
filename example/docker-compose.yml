@@ -1,6 +1,6 @@
 services:
   flux-eco-ehf-app-backend:
-    image: fluxms/flux-eco-ehf-app-backend:v2022-03-29-1
+    image: fluxms/flux-eco-ehf-app-backend:v2022-04-06-1
     ports:
       - 127.0.0.1:8200:8200
     volumes:

@@ -9,7 +9,7 @@ const readFile = (filePath) => {
 }
 
 async function app() {
-    const config = readFile("./configs/flux-eco-ehf-app-backend-config.json");
+    const config = {};
     const api = Api.new(config)
     const serverSettings = readFile("./configs/flux-eco-node-http-server-config.json");
     const server = await FluxEcoNodeHttpServer.new(serverSettings, api);

@@ -1,0 +1,13 @@
+/*
+!app/
+app/*
+!app/bin/
+!app/configs
+!app/types
+!app/Api.mjs
+!app/app.mjs
+!app/docker_entrypoint.sh
+!build/
+!.gitignore
+!example
+!README.md
