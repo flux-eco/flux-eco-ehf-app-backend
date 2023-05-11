@@ -38,8 +38,26 @@
       },
       "/api/readTrainingAreas": {
         "content-type": "application/json",
+        "parameters": {
+          "limit": "number"
+        },
         "content": {
           "type": "array"
+        }
+      },
+      "/api/readUserProfil/userId/{userId}": {
+        "content-type": "application/json",
+        "content": {
+          "type": "object"
+        }
+      },
+      "/api/readAmbassadorSessions": {
+        "content-type": "application/json",
+        "parameters": {
+          "limit": "number"
+        },
+        "content": {
+          "type": "object"
         }
       }
     }

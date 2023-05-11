@@ -40,6 +40,18 @@ export default class Api {
         return JSON.parse(result.toString());
     }
 
+    readAmbassadorSessions() {
+        //todo query action from database
+        const result = fs.readFileSync(`./data/ambassador-sessions.json`);
+        return JSON.parse(result.toString());
+    }
+
+    readUserProfil({userId}) {
+        //todo query action from database
+        const result = fs.readFileSync(`./data/user-data/${userId}/profil.json`);
+        return JSON.parse(result.toString());
+    }
+
     /**
      * @param {FluxEcoEhfAppBackendConfig|object} config
      * @returns {FluxEcoEhfAppBackendConfig|object}
