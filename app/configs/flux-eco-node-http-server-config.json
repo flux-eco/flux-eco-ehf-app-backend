@@ -51,10 +51,35 @@
           "type": "object"
         }
       },
-      "/api/readAmbassadorSessions": {
+      "/api/writeTrainingDiary": {
         "content-type": "application/json",
         "parameters": {
-          "limit": "number"
+          "trainingSessionId": {
+            "type": "string"
+          },
+          "userId": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "rating": {
+            "type": "number"
+          }
+        },
+        "content": {
+          "type": "object"
+        }
+      },
+      "/api/writePlayTimeTalents": {
+        "content-type": "application/json",
+        "parameters": {
+          "trainingSessionId": {
+            "type": "string"
+          },
+          "talents": {
+            "type": "number"
+          }
         },
         "content": {
           "type": "object"
@@ -96,6 +121,34 @@
     {
       "actionName": "readTrainingAreas",
       "parameters": {
+      }
+    },
+    {
+      "actionName": "writeTrainingDiary",
+      "parameters": {
+        "trainingSessionId": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "rating": {
+          "type": "number"
+        }
+      }
+    },
+    {
+      "actionName": "writePlayTimeTalents",
+      "parameters": {
+        "trainingSessionId": {
+          "type": "string"
+        },
+        "talents": {
+          "type": "number"
+        }
       }
     }
   ]

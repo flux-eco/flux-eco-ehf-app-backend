@@ -52,6 +52,27 @@ export default class Api {
         return JSON.parse(result.toString());
     }
 
+    writeTrainingDiary(
+        {trainingSessionId, userId, text, rating}
+    ) {
+        //get app state of userId if not exists throw error
+
+        //run writeTrainingDiaryTransition
+
+        //store new app state in database
+
+        return 'Ok';
+    }
+
+    writePlayTimeTalents({trainingSessionId, talents}) {
+        //get app state of userId if not exists throw error
+
+        //run writeTrainingDiaryTransition
+
+        return 'Ok';
+    }
+
+
     /**
      * @param {FluxEcoEhfAppBackendConfig|object} config
      * @returns {FluxEcoEhfAppBackendConfig|object}
